@@ -1,0 +1,6 @@
+Número de cartas totales: 32
+Número de cartas sacadas: 0
+Número de cartas pendientes: 32
+Número de cartas totales: 32
+Número de cartas sacadas: 4
+Número de cartas pendientes: 28

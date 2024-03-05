@@ -1,0 +1,146 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                                 JUEGO DE CARTAS DE COCHES                                 ~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------------------------------------
+Cuántos jugadores hay: 4
+Nombre del jugador 1: Jugador 1
+Nombre del jugador 2: Jugador 2
+Nombre del jugador 3: Jugador 3
+Nombre del jugador 4: Jugador 4
+Nombres de los jugadores:
+Jugador 1: Jugador 1
+Jugador 2: Jugador 2
+Jugador 3: Jugador 3
+Jugador 4: Jugador 4
+---------------------------------------------------------------------------------------------
+Cartas de los jugadores:
+Jugador 1: 8
+Jugador 2: 8
+Jugador 3: 8
+Jugador 4: 8
+Cartas de los jugadores:
+......................
+Cartas del jugador 1:
+Ford Scort 1.3
+Renault 25 gtx
+Volvo 480
+Nissan Sunny
+Porsche 959
+BMW M3
+Mercedes 380 SEC
+Jaguar XJ 6 3.6
+......................
+Cartas del jugador 2:
+Peugeot 309 GRD
+Seat Ibiza 1.5 GLX
+Audi 80 Quattro
+Mazda RX 7
+Ferrari 328 GTS
+Volvo 780
+Opel Kadett GSI
+Aston Martin Zagato
+......................
+Cartas del jugador 3:
+Porsche 928 S4
+Rover Sterling
+Opel Omega 2.0i
+Renault 21
+Citroen AX 10 E
+Fiat Croma 2000 i.e.
+Mercury Sable
+Emelba Siete
+......................
+Cartas del jugador 4:
+VW Golf GTI 16V
+Toyota Supra 3.0i
+Ford RS 200
+BMW 735i
+Honda Accord A. Deck
+Subaru XT T. Allrad
+Alfa Romeo 75
+Mercedes Benz 200
+......................
+Turno: 0
+---------------------------------------------------------------------------------------------
+Jugador1, elige característica
+1. Motor    2. Potencia    3. Velocidad    4. Consumo
+Característica [1-4]: 1
+Característica: 1
+---------------------------------------------------------------------------------------------
+Ganador(es) de la jugada: Jugador1
+Ganador(es) de la jugada: Jugador1 Jugador3
+Ganador(es) de la jugada: Jugador2 Jugador3
+Ganador(es) de la jugada: Jugador1 Jugador4
+Ganador(es) de la jugada: Jugador3 Jugador4
+Ganador(es) de la jugada: Jugador1 Jugador2 Jugador3 Jugador4
+---------------------------------------------------------------------------------------------
+|----------------------|
+|Renault 25 gtx (FR)   |
+|----------------------|
+|Motor: 2165 cc        |
+|Potencia: 121 CV      |
+|Velocidad: 196 km/h   |
+|Consumo 100km: 9.6 l  |
+|----------------------|
+Jugador1, elige característica
+1. Motor    2. Potencia    3. Velocidad    4. Consumo
+Característica [1-4]: 3
+|----------------------|----------------------|----------------------|----------------------|
+|Renault 25 gtx        |Peugeot 309 GRD       |Rover Sterling        |Subaru XT T. Allrad   |
+|----------------------|----------------------|----------------------|----------------------|
+|Motor: 2165 cc        |Motor: 1905 cc        |Motor: 2494 cc        |Motor: 1781 cc        |
+|Potencia: 121 CV      |Potencia: 64 CV       |Potencia: 167 CV      |Potencia: 136 CV      |
+|Velocidad: 196 km/h   |Velocidad: 160 km/h   |Velocidad: 211 km/h   |Velocidad: 200 km/h   |
+|Consumo 100km: 9.6 l  |Consumo 100km: 5.8 l  |Consumo 100km: 9.5 l  |Consumo 100km: 8.5 l  |
+|----------------------|----------------------|----------------------|----------------------|
+
+Ganador(es) de la jugada: Jugador3
+---------------------------------------------------------------------------------------------
+Resultados:
+--------------------
+Jugador1 ha ganado: 0
+Jugador2 ha ganado: 0
+Jugador3 ha ganado: 0
+Jugador4 ha ganado: 0
+--------------------
+---------------------------------------------------------------------------------------------
+Resultados:
+--------------------
+Jugador1 ha ganado: 1
+Jugador2 ha ganado: 1
+Jugador3 ha ganado: 1
+Jugador4 ha ganado: 1
+--------------------
+---------------------------------------------------------------------------------------------
+Resultados:
+--------------------
+Jugador1 ha ganado: 1
+Jugador2 ha ganado: 1
+Jugador3 ha ganado: 1
+Jugador4 ha ganado: 1
+--------------------
+---------------------------------------------------------------------------------------------
+Resultados:
+--------------------
+Jugador1 ha ganado: 4
+Jugador2 ha ganado: 3
+Jugador3 ha ganado: 2
+Jugador4 ha ganado: 2
+--------------------
+---------------------------------------------------------------------------------------------
+Resultados:
+--------------------
+Jugador1 ha ganado: 2
+Jugador2 ha ganado: 2
+Jugador3 ha ganado: 3
+Jugador4 ha ganado: 4
+--------------------
+---------------------------------------------------------------------------------------------
+Resultados:
+--------------------
+Jugador1 ha ganado: 2
+Jugador2 ha ganado: 3
+Jugador3 ha ganado: 3
+Jugador4 ha ganado: 2
+--------------------
+---------------------------------------------------------------------------------------------

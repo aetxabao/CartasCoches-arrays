@@ -1,0 +1,20 @@
+|----------------------|
+|Seat Ibiza (ES)       |
+|----------------------|
+|Motor: 1600 cc        |
+|Potencia: 90 CV       |
+|Velocidad: 220 km/h   |
+|Consumo 100km: 8.5 l  |
+|----------------------|
+|----------------------|
+|Renault Clio (FR)     |
+|----------------------|
+|Motor: 1600 cc        |
+|Potencia: 110 CV      |
+|Velocidad: 180 km/h   |
+|Consumo 100km: 5.5 l  |
+|----------------------|
+Gana Ibiza a Clio en motor: true
+Gana Ibiza a Clio en potencia: false
+Gana Ibiza a Clio en velocidad: true
+Gana Ibiza a Clio en consumo: false

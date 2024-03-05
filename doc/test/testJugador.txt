@@ -1,0 +1,18 @@
+Nombre del jugador: Jugador 1
+Número de cartas: 0
+Metiendo carta: Carta 1
+Número de cartas: 1
+Metiendo carta: Carta 2
+Número de cartas: 2
+Metiendo carta: Carta 3
+Número de cartas: 3
+Metiendo carta: Carta 4
+Número de cartas: 4
+Saca carta 1: Carta 4
+Número de cartas: 3
+Saca carta 2: Carta 3
+Número de cartas: 2
+Saca carta 3: Carta 2
+Número de cartas: 1
+Saca carta 4: Carta 1
+Número de cartas: 0

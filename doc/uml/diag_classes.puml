@@ -1,0 +1,21 @@
+@startuml
+class Jugador {
+}
+class Carta {
+}
+class Juego {
+}
+class Baraja {
+}
+class Main {
+}
+class Jugada {
+}
+Main .down.> Juego
+Juego --> Baraja
+Juego *-down-> Jugador
+Juego ..> Jugada
+Jugador *-> Carta
+Jugada *-> Carta
+Baraja *-down-> Carta
+@enduml
