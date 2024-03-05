@@ -22,6 +22,9 @@ public class Jugador {
      */
     public Jugador(String nombre) {
         // TODO 21: constructor Jugador
+        this.nombre = nombre;
+        this.cartas = new Carta[Baraja.getNumeroCartasTotales()];
+        this.numeroCartas = 0;
     }
 
     /**
@@ -47,6 +50,8 @@ public class Jugador {
      */
     public void meterCarta(Carta carta) {
         // TODO 22: meterCarta
+        cartas[numeroCartas] = carta;
+        numeroCartas++;
     }
 
     /**
@@ -56,7 +61,10 @@ public class Jugador {
      */
     public Carta sacarCarta() {
         // TODO 23: sacarCarta
-        return null;
+        Carta carta = cartas[numeroCartas-1];
+        cartas[numeroCartas-1] = null;
+        numeroCartas--;
+        return carta;
     }
 
 }

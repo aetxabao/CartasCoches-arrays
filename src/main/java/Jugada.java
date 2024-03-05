@@ -25,6 +25,7 @@ public class Jugada {
      */
     public Jugada(Carta[] cartas) {
         // TODO 31: constructor Jugada
+        this.cartas = cartas;
     }
 
     /**
@@ -37,7 +38,22 @@ public class Jugada {
      */
     public int[] ganadores(int caracteristica) {
         // TODO 32: ganadores
-        return null;
+        int numCartas = cartas.length;
+        int[] ganadores = new int[numCartas];
+        for (int i = 0; i < numCartas; i++) {
+            boolean gana = true;
+            Carta carta1 = cartas[i];
+            for (int j = 0; j < numCartas; j++) {
+                if (i==j) { continue; }
+                Carta carta2 = cartas[j];
+                if (!carta1.gana(carta2, caracteristica)) {
+                    gana = false;
+                    break;
+                }
+            }
+            ganadores[i] = gana?1:0;
+        }
+        return ganadores;
     }
 
     /**
@@ -93,7 +109,18 @@ public class Jugada {
      */
     private void pintarJugadores(Jugador[] jugadores) {
         // TODO 33: pintarJugadores
+        int n, m;
+        String nombre;
+        String s = "|";
+        for (Jugador jugador : jugadores) {
+            nombre = jugador.getNombre();
+            n = (22 - nombre.length()) / 2;
+            m = 22 - nombre.length() - n;
+            s += String.format("%-22s|"," ".repeat(n) + nombre + " ".repeat(m));
+        }
+        System.out.println(s);
     }
+
 
     /**
      * Pinta la carta que se le pasa como parámetro.
@@ -102,6 +129,7 @@ public class Jugada {
      */
     public void pintarCarta(int numero) {
         // TODO 34: pintarCarta
+        cartas[numero-1].pintar();
     }
 
     /**

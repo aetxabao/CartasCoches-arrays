@@ -43,6 +43,14 @@ public class Juego {
 
         // TODO 41: crearJugadores
 
+        jugadores = new Jugador[numJugadores];
+        contadores = new int[numJugadores];
+        for (int i = 1; i <= numJugadores; i++) {
+            System.out.printf("Nombre del jugador %d: ",i);
+            nombre = teclado.nextLine();
+            jugadores[i-1] = new Jugador(nombre);
+        }
+
         System.out.println();
     }
 
@@ -52,7 +60,7 @@ public class Juego {
      */
     public int numeroJugadores() {
         // TODO 42: numeroJugadores
-        return 0;
+        return jugadores.length;
     }
 
     /**
@@ -62,6 +70,8 @@ public class Juego {
      */
     public void setJugadores(Jugador[] jugadores) {
         // TODO 43: setJugadores
+        this.jugadores = jugadores;
+        this.contadores = new int[jugadores.length];
     }
 
     /**
@@ -71,7 +81,7 @@ public class Juego {
      */
     public Jugador getJugador(int numeroJugador) {
         // TODO 44: getJugador
-        return null;
+        return jugadores[numeroJugador-1];
     }
 
     /**
@@ -101,6 +111,14 @@ public class Juego {
      */
     public void repartirCartas() {
         // TODO 45: repartirCartas
+        baraja = new Baraja();
+        baraja.revolver();
+        int numJugadores = jugadores.length;
+        int numCartas = baraja.getNumeroCartasTotales() / jugadores.length * jugadores.length;
+        for (int i = 0; i < numCartas; i++) {
+            jugadores[i%numJugadores].meterCarta(baraja.sacarCarta());
+        }
+        turno = 0;
     }
 
     /**
@@ -108,6 +126,10 @@ public class Juego {
      */
     public void jugar() {
         // TODO 46: jugar
+        int numJugadas = baraja.getNumeroCartasTotales() / jugadores.length;
+        for (int i = 0; i < numJugadas; i++) {
+            jugarJugada();
+        }
     }
 
     /**
@@ -126,7 +148,11 @@ public class Juego {
         avanzarTurno();
 
         // TODO 47: jugarJugada
-        Carta[] cartas = null;
+        int numJugadores = jugadores.length;
+        Carta[] cartas = new Carta[numJugadores];
+        for (int i = 0; i < numJugadores; i++) {
+            cartas[i] = jugadores[i].sacarCarta();
+        }
 
         Jugada jugada = new Jugada(cartas);
         jugada.pintarCarta(turno);
@@ -144,6 +170,8 @@ public class Juego {
      */
     private void avanzarTurno() {
         // TODO 48: avanzarTurno
+        int numJugadores = jugadores.length;
+        turno = turno % numJugadores + 1;
     }
 
     /**
@@ -172,6 +200,9 @@ public class Juego {
      */
     public void actualizarContadores(int[] ganadores) {
         // TODO 49: actualizarContadores
+        for (int i = 0; i < ganadores.length; i++) {
+            contadores[i] += ganadores[i];
+        }
     }
 
     /**
@@ -181,6 +212,11 @@ public class Juego {
     public void mostrarGanadores(int[] ganadores) {
         String nombres = "";
         // TODO 50: mostrarGanadores
+        for (int i = 0; i < ganadores.length; i++) {
+            if (ganadores[i]>0) {
+                nombres += jugadores[i].getNombre() + " ";
+            }
+        }
 
         System.out.println("Ganador(es) de la jugada: " + nombres + "\n");
     }

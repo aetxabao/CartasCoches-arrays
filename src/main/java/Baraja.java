@@ -61,6 +61,16 @@ new Carta("Porsche 959", "porsche959", "DE", 2850, 450, 320, 20),
      */
     public void revolver() {
         // TODO 11: revolver
+        Random rnd = new Random();
+        int numCartas = cartas.length;
+        for (int i = 0; i < numCartas; i++) {
+            int a = rnd.nextInt(numCartas);
+            int b = rnd.nextInt(numCartas);
+            Carta c = cartas[a];
+            cartas[a] = cartas[b];
+            cartas[b] = c;
+        }
+        pos = 0;
     }
 
     /**
@@ -71,7 +81,9 @@ new Carta("Porsche 959", "porsche959", "DE", 2850, 450, 320, 20),
      */
     public Carta sacarCarta() {
         // TODO 12: sacarCarta
-        return null;
+        Carta carta = cartas[pos];
+        pos++;
+        return carta;
     }
 
     /**
@@ -80,7 +92,7 @@ new Carta("Porsche 959", "porsche959", "DE", 2850, 450, 320, 20),
      */
     public int getNumeroCartasPendientes() {
         // TODO 13: getNumeroCartasPendientes
-        return 0;
+        return cartas.length - pos;
     }
 
     /**
@@ -89,7 +101,7 @@ new Carta("Porsche 959", "porsche959", "DE", 2850, 450, 320, 20),
      */
     public int getNumeroCartasSacadas() {
         // TODO 14: getNumeroCartasSacadas
-        return 0;
+        return pos;
     }
 
     /**
@@ -98,7 +110,7 @@ new Carta("Porsche 959", "porsche959", "DE", 2850, 450, 320, 20),
      */
     public static int getNumeroCartasTotales() {
         // TODO 15: getNumeroCartasTotales
-        return 0;
+        return cartas.length;
     }
 
 }
